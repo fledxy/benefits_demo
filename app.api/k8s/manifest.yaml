@@ -23,7 +23,7 @@ spec:
         image: nginx:latest
         ports:
           - name: benefits-api
-            containerPort: 8086
+            containerPort: 80
             protocol: TCP
         resources:
           requests:
@@ -41,7 +41,7 @@ metadata:
 spec:
   ports:
     - port: 80     # egress port 
-      targetPort: 8086  # ingress port (containerPort)
+      targetPort: 80  # ingress port (containerPort)
   selector:
     app: benefits-api
   type: ClusterIP
