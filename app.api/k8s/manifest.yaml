@@ -24,7 +24,6 @@ spec:
         ports:
           - name: benefits-api
             containerPort: 80
-            protocol: TCP
         resources:
           requests:
             cpu: "256m"
