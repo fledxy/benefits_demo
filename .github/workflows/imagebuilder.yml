@@ -1,11 +1,11 @@
-name: Builder Image and Run on ArgoCD
+name: Builder Image and Deploy
 
 on:
   push:
     branches:
       - main # Trigger action on pushes to main branch
     paths:
-      - 'app.api/k8s/**' # Only trigger on changes to the app.api/k8s directory
+      - "app.api/k8s/**" # Only trigger on changes to the app.api/k8s directory
 
 jobs:
   build:
@@ -55,4 +55,3 @@ jobs:
           git push https://x-access-token:${{ secrets.GH_ACTION_PAT }}github.com/fledxy/benefits_demo.git
  
 
-          
