@@ -5,5 +5,8 @@ resources:
 
 
 images:
-- name: fledxy/fledxy_application
-  newTag: 349086357d9086938835ca9f0b21267f42de004b
+  - name: fledxy/fledxy_application
+    newName: fledxy/fledxy_application
+    newTag: 349086357d9086938835ca9f0b21267f42de004b
+
+  

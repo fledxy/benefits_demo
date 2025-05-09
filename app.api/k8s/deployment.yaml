@@ -17,7 +17,7 @@ spec:
         - name: dockerhubdemo
       containers:
       - name: benefits-api
-        image: fledxy/fledxy_application:9a07b6c9533e3671326f4e76f542988b08497505
+        image: fledxy/fledxy_application:349086357d9086938835ca9f0b21267f42de004b
         ports:
           - name: benefits-api
             containerPort: 80
