@@ -6,6 +6,8 @@ on:
       - main # Trigger action on pushes to main branch
     paths:
       - 'app.api/k8s/**' # Only trigger on changes to the app.api/k8s directory
+permissions:
+    contents: write # Required to push changes to the repository
 jobs:
   build:
     runs-on: ubuntu-latest
