@@ -43,15 +43,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Update the deployment manifest file
-        run: |
-          cd app.api/k8s
-          kustomize edit set image fledxy/fledxy_application:${{ github.sha }}
-          cat kustomize.yaml
-          cd ../..
-          git pull 
-          git add .
-          git commit -am "Update image to ${{ github.sha }}"
-          git push https://x-access-token:${{ secrets.GH_ACTION_PAT }}github.com/fledxy/benefits_demo.git
+      # - name: Update the deployment manifest file
+      #   run: |
+      #     cd app.api/k8s
+      #     kustomize edit set image fledxy/fledxy_application:${{ github.sha }}
+      #     cat kustomize.yaml
+      #     cd ../..
+      #     git pull 
+      #     git add .
+      #     git commit -am "Update image to ${{ github.sha }}"
+      #     git push https://x-access-token:${{ secrets.GH_ACTION_PAT }}github.com/fledxy/benefits_demo.git
    
 
