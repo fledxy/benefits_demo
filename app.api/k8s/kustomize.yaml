@@ -1,0 +1,9 @@
+resources:
+  - deploymet.yaml
+
+images:
+  - name: benefits-api
+    newTag: dsadasd
+  
+
+  

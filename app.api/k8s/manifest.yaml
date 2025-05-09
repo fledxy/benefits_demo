@@ -3,33 +3,6 @@ kind: Namespace
 metadata: 
   name: benefits-cd
 ---
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: app-api
-  namespace: benefits-cd
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: benefits-api
-  template:
-    metadata:
-      labels:
-        app: benefits-api
-    spec:
-      containers:
-      - name: benefits-api
-        image: nginx:latest
-        ports:
-          - name: benefits-api
-            containerPort: 80
-        resources:
-          requests:
-            memory: "256Mi"
-          limits:
-            memory: "512Mi"
----
 apiVersion: v1
 kind: Service
 metadata:
