@@ -1,10 +1,11 @@
-resources:
-- deploymet.yaml
-
-images:
-- name: benefits-api
-  newTag: dsadasd
-- name: fledxy/fledxy_application
-  newTag: 4f6a781ba6fe4b4b49e3ed3557702cdd9d6e9105
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
+resources:
+  - deploymet.yaml
+
+images:
+  - name: fledxy/fledxy_application
+    newName: fledxy/fledxy_application
+    newTag: 9a07b6c9533e3671326f4e76f542988b08497505
+
+  
