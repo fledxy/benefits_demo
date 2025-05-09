@@ -46,7 +46,7 @@ jobs:
         run: |
           cd app.api/k8s
           kustomize edit set image fledxy/fledxy_application:${{ github.sha }}
-          cat kustomization.yaml
+          cat kustomize.yaml
           cd ../..
           git pull 
           git add .
