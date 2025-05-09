@@ -53,5 +53,5 @@ jobs:
           git add .
           git commit -am "Update image to ${{ github.sha }}"
           git push https://x-access-token:${{ secrets.GH_ACTION_PAT }}github.com/fledxy/benefits_demo.git
- 
+   
 
