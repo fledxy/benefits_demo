@@ -46,6 +46,8 @@ jobs:
       - name: Update the deployment manifest file
         run: |
           cd app.api/k8s
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
           kustomize edit set image fledxy/fledxy_application:${{ github.sha }}
           cat kustomization.yaml
           cd ../..
