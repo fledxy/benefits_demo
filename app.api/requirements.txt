@@ -1,2 +1,8 @@
 Flask==3.0.2
 gunicorn==21.2.0 
+passlib
+elastic-apm[flash]
+pip install psutil
+Flask-Cors
+Flask-RESTful
+Flask-SQLAlchemy
